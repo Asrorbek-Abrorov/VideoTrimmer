@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "VideoEditor/1.0.0": {
+        "dependencies": {
+          "FFmpeg.Net": "1.1.0",
+          "LibVLCSharp": "3.8.2",
+          "NReco.VideoConverter": "1.2.1"
+        },
+        "runtime": {
+          "VideoEditor.dll": {}
+        }
+      },
+      "FFmpeg.Net/1.1.0": {
+        "runtime": {
+          "lib/net5.0/FFmpeg.Net.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.0.0"
+          }
+        }
+      },
+      "LibVLCSharp/3.8.2": {
+        "runtime": {
+          "lib/net6.0/LibVLCSharp.dll": {
+            "assemblyVersion": "3.8.2.0",
+            "fileVersion": "3.8.2.0"
+          }
+        }
+      },
+      "NReco.VideoConverter/1.2.1": {
+        "runtime": {
+          "lib/netstandard2.0/NReco.VideoConverter.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VideoEditor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FFmpeg.Net/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ActX5hrTFFog6m0XHNSEk06yDVxmCA77kH8NJOY6fmDxjm/GhjGOdLmadM+J1PdgBrbMTrB+I5BhlqTOdosT+g==",
+      "path": "ffmpeg.net/1.1.0",
+      "hashPath": "ffmpeg.net.1.1.0.nupkg.sha512"
+    },
+    "LibVLCSharp/3.8.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P61Pkc+2GgX9PGJmm0MTVYKh0zPbak25rkyb5MU8Vq7x/VgFV/0h3L2bP7H4Oz5sfmm03H8T010cqEKQVA4Jew==",
+      "path": "libvlcsharp/3.8.2",
+      "hashPath": "libvlcsharp.3.8.2.nupkg.sha512"
+    },
+    "NReco.VideoConverter/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d/V78hRW6Iqi9+lNrivCWL9qMiiJ8WCrwN1wpEvGq+3mE3uIy7VYhkgHrJBkUzx4RRQKEJ9UvCvVb+0ELIbGWg==",
+      "path": "nreco.videoconverter/1.2.1",
+      "hashPath": "nreco.videoconverter.1.2.1.nupkg.sha512"
+    }
+  }
+}
