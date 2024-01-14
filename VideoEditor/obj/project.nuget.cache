@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Kj3hVYRFOzbxZ1103LJhW6aFNXfpIGFtmUjiIUcyMcpNm0D4S69YnF/Jce5RSnM58TDGVJabvgvP4Jgc6xDu2g==",
+  "dgSpecHash": "Vsa+HrbJmJLWoBP0IkNxrHFO7dvWLt2FCUq/7DLpT7oYlKO06FRBlJsV6JkYJRuCRjqm/PRW3i+8aN4HflxdCA==",
   "success": true,
   "projectFilePath": "/home/as_abrorov/RiderProjects/VideoEditor/VideoEditor/VideoEditor.csproj",
   "expectedPackageFiles": [
     "/home/as_abrorov/.nuget/packages/ffmpeg.net/1.1.0/ffmpeg.net.1.1.0.nupkg.sha512",
     "/home/as_abrorov/.nuget/packages/libvlcsharp/3.8.2/libvlcsharp.3.8.2.nupkg.sha512",
-    "/home/as_abrorov/.nuget/packages/nreco.videoconverter/1.2.1/nreco.videoconverter.1.2.1.nupkg.sha512"
+    "/home/as_abrorov/.nuget/packages/nreco.videoconverter/1.2.1/nreco.videoconverter.1.2.1.nupkg.sha512",
+    "/home/as_abrorov/.nuget/packages/spectre.console/0.48.0/spectre.console.0.48.0.nupkg.sha512",
+    "/home/as_abrorov/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"
   ],
   "logs": []
 }
