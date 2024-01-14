@@ -13,8 +13,11 @@ public class VideoTrimmer
             return;
         }
 
-        // Output video file name
-        string outputVideoPath = $"/home/as_abrorov/Documents/{name}.mp4";
+        // Get the directory path of the input video
+        string directory = System.IO.Path.GetDirectoryName(videoPath);
+
+        // Output video file path
+        string outputVideoPath = System.IO.Path.Combine(directory, $"{name}.mp4");
 
         // Generate FFmpeg command
         string command = $"-ss {startSeconds} -i \"{videoPath}\" -to {endSeconds} -c:v copy -c:a copy \"{outputVideoPath}\"";
@@ -53,10 +56,10 @@ public class VideoTrimmer
 
     public static void Main(string[] args)
     {
-        string videoPath = "/home/as_abrorov/Downloads/video_2024-01-13_21-14-33.mp4";
-        int startSeconds = AnsiConsole.Ask<int>("Enter the starting point in seconds : ");
-        int endSeconds = AnsiConsole.Ask<int>("Enter the Ending point in seconds : ");
-        string name = AnsiConsole.Ask<string>("Enter a name of the new video(don't enter an extension) : ");
+        string videoPath = AnsiConsole.Ask<string>("Enter the path of the video: "); // "/home/as_abrorov/Downloads/video_2024-01-13_21-14-33.mp4"
+        int startSeconds = AnsiConsole.Ask<int>("Enter the starting point in seconds: ");
+        int endSeconds = AnsiConsole.Ask<int>("Enter the Ending point in seconds: ");
+        string name = AnsiConsole.Ask<string>("Enter a name for the new video (do not enter an extension): ");
         TrimVideo(videoPath, startSeconds, endSeconds, name);
     }
 }
