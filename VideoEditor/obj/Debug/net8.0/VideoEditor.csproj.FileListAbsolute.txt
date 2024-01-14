@@ -17,3 +17,5 @@
 /home/as_abrorov/RiderProjects/VideoEditor/VideoEditor/obj/Debug/net8.0/VideoEditor.pdb
 /home/as_abrorov/RiderProjects/VideoEditor/VideoEditor/obj/Debug/net8.0/VideoEditor.genruntimeconfig.cache
 /home/as_abrorov/RiderProjects/VideoEditor/VideoEditor/obj/Debug/net8.0/ref/VideoEditor.dll
+/home/as_abrorov/RiderProjects/VideoEditor/VideoEditor/bin/Debug/net8.0/Spectre.Console.dll
+/home/as_abrorov/RiderProjects/VideoEditor/VideoEditor/obj/Debug/net8.0/VideoEditor.sourcelink.json

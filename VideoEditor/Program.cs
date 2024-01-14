@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Diagnostics;
+using Spectre.Console;
 
 public class VideoTrimmer
 {
-    public static void TrimVideo(string videoPath, int startSeconds, int endSeconds)
+    public static void TrimVideo(string videoPath, int startSeconds, int endSeconds, string name)
     {
         // Check if FFmpeg is installed
         if (!IsFFmpegInstalled())
@@ -13,7 +14,7 @@ public class VideoTrimmer
         }
 
         // Output video file name
-        string outputVideoPath = "/home/as_abrorov/Documents/trimmed_video.mp4";
+        string outputVideoPath = $"/home/as_abrorov/Documents/{name}.mp4";
 
         // Generate FFmpeg command
         string command = $"-ss {startSeconds} -i \"{videoPath}\" -to {endSeconds} -c:v copy -c:a copy \"{outputVideoPath}\"";
@@ -53,9 +54,9 @@ public class VideoTrimmer
     public static void Main(string[] args)
     {
         string videoPath = "/home/as_abrorov/Downloads/video_2024-01-13_21-14-33.mp4";
-        int startSeconds = 10; // Start from 10 seconds
-        int endSeconds = 30; // End at 30 seconds
-
-        TrimVideo(videoPath, startSeconds, endSeconds);
+        int startSeconds = AnsiConsole.Ask<int>("Enter the starting point in seconds : ");
+        int endSeconds = AnsiConsole.Ask<int>("Enter the Ending point in seconds : ");
+        string name = AnsiConsole.Ask<string>("Enter a name of the new video(don't enter an extension) : ");
+        TrimVideo(videoPath, startSeconds, endSeconds, name);
     }
 }
